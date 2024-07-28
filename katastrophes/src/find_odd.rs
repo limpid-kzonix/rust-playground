@@ -5,18 +5,11 @@
 use std::collections::HashMap;
 
 fn find_odd(arr: &[i32]) -> i32 {
-    
     let mut counts: HashMap<i32, i32>= HashMap::new();
-
     for i in arr.iter() {
-
         let updated = counts.get(i).unwrap_or(&0);
         counts.insert(*i, *updated + 1);
-
-        
     }
-
-
     let mut res: i32 = 0; 
     for (k, v) in counts.iter()  {
         if v % 2 != 0 {
@@ -26,7 +19,6 @@ fn find_odd(arr: &[i32]) -> i32 {
             res = *k;
         }
     }
-
     return res;
 }
 

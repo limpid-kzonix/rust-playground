@@ -24,5 +24,5 @@ fn find_odd(arr: &[i32]) -> i32 {
 
 pub fn run() {
     let res = find_odd(&[1,1,2]);
-    println!("{}", res);
+    println!("find_odd: {}", res);
 }

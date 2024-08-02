@@ -2,6 +2,7 @@ mod create_phone_numbers;
 mod find_odd;
 mod get_sum;
 mod maskify;
+mod find_outlier;
 
 fn main() {
     println!("Codewars:");
@@ -9,4 +10,5 @@ fn main() {
     find_odd::run();
     get_sum::run();
     maskify::run();
+    find_outlier::run();
 }

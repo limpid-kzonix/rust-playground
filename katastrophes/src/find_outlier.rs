@@ -3,7 +3,20 @@
 // Author: https://www.codewars.com/users/obnounce
 
 fn find_outlier(values: &[i32]) -> i32 {
-    todo!();
+    let (mut evens, mut odds) = (vec![], vec![]);
+    for &i in values.iter() {
+        if i % 2 == 0 {
+            evens.push(i);
+        } else {
+            odds.push(i);
+        }
+    }
+
+    if evens.len() == 1 {
+        *(evens.first().unwrap())
+    } else {
+        *(odds.first().unwrap())
+    }
 }
 
 pub fn run() {

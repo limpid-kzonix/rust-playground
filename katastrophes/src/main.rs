@@ -3,6 +3,7 @@ mod find_odd;
 mod get_sum;
 mod maskify;
 mod find_outlier;
+mod high_and_low;
 
 fn main() {
     println!("Codewars:");
